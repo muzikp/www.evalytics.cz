@@ -1,0 +1,17 @@
+{
+	"name": "www.evalytics.cz",
+	"version": "1.0.0",
+	"description": "2023 version",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx web run",
+		"npx-web-run": "web-run"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"static-bootstrap-web": "file:../static-bootstrap-web"
+	}
+}

@@ -1,0 +1,11 @@
+nav.navbar.navbar-expand-lg.bg-body-tertiary
+	.container-fluid
+		a.navbar-brand(href='/')
+				img.logo(src="/media/logo-plain.svg" alt="Logo Evalytics s.r.o." class="d-inline-block align-text-top")
+		button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		#navbarNav.collapse.navbar-collapse
+			ul.navbar-nav
+				each m in menu
+					li.nav-item
+						a.upper.extra-bold.nav-link(aria-current='page' href=m.href) !{m.label}

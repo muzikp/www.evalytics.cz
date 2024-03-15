@@ -1,0 +1,55 @@
+{
+	"compilers": {
+		"ignore": [
+			"layout.pug",
+			"navbar.pug"
+		],
+		"javascript": {
+			"minified": true,
+			"minifiedOnly": false
+		},
+		"scss": {
+			"minified": true,
+			"minifiedOnly": true
+		},
+		"pug": {
+			"minified": true
+		},
+		"image": {
+			"default": "webp",
+			"rules": [],
+			"styles": {
+				"webphigh": {
+					"webp": {},
+					"modulate": {
+						"brightness": 1,
+						"saturation": 1,
+						"hue": 1,
+						"lightness": 1
+					}
+				}
+			}
+		}
+	},
+	"seo": {
+		"host": "",
+		"sitemap": {
+			"auto": true,
+			"frequency": "daily",
+			"extensions": [
+				"html"
+			],
+			"ignore": []
+		},
+		"robots": {
+			"auto": true,
+			"content": [
+				"User-agent: Googlebot",
+				"Disallow: /nogooglebot/",
+				"",
+				"User-agent: *",
+				"Allow: /"
+			]
+		}
+	}
+}
