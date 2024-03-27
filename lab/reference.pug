@@ -1,0 +1,14 @@
+section#reference.bg-light-gray
+	.content
+		.flex-cont.section-header
+			.box-2.left
+				h1.section-title Naše reference
+			.box-2.right
+				.icon
+					.small-section-divider
+	.content
+		.reference
+			each ref in reference
+				.item
+					a(href=ref.url target = "_blank")
+						img(src="/media/reference/" + ref.img, alt= "Logo " + ref.alt)

@@ -2,7 +2,8 @@
 	"compilers": {
 		"ignore": [
 			"layout.pug",
-			"navbar.pug"
+			"navbar.pug",
+			"reference.pug"
 		],
 		"javascript": {
 			"minified": true,
@@ -19,7 +20,7 @@
 			"default": "webp",
 			"rules": [],
 			"styles": {
-				"webphigh": {
+				"webp": {
 					"webp": {},
 					"modulate": {
 						"brightness": 1,
