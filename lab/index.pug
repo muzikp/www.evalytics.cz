@@ -243,7 +243,7 @@ html
                 border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
             }
             }
-        .coming-soon            
+        #cs.coming-soon            
             .content
                 img.logo(src="/media/logo-transparent.webp" style="max-width: 50vw;")                
                 br
@@ -255,6 +255,7 @@ html
                 }
                 .time {
                 display: flex;
+                justify-content: center;
                 flex-direction: row;
                 transform: translateZ(20px);
                 transform: translateZ(20px) rotateX(calc(var(--mouse-y) * 45deg)) rotateY(calc(var(--mouse-x) * 45deg));
@@ -936,21 +937,8 @@ html
                 subscribe(({ hours, minutes, seconds }) => {
                 timeElm.setAttribute('data-hours', pad(hours));
                 timeElm.setAttribute('data-minutes', pad(minutes));
-                timeElm.setAttribute('data-seconds', pad(seconds));
-                });  
-                /*
-                const mouse$ = Rx.Observable.
-                fromEvent(document, 'mousemove').
-                map(({ clientX, clientY }) => ({
-                x: (clientWidth / 2 - clientX) / clientWidth,
-                y: (clientHeight / 2 - clientY) / clientHeight }));
-                const smoothMouse$ = animationFrame$.
-                withLatestFrom(mouse$, (_, m) => m).
-                scan(RxCSS.lerp(0.1));
-                RxCSS({
-                mouse: smoothMouse$ },
-                timeElm);                
-                */
+                timeElm.setAttribute('data-seconds', pad(seconds));                
+                });                
             .contact
                 a.email(href="mailto:info@evalytics.cz") info@evalytics.cz
                 br

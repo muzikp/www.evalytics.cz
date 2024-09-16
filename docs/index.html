@@ -228,12 +228,13 @@ animation: aurora-border 3s ease-in-out infinite,
 100% {
     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
 }
-}</style><div class="coming-soon">           <div class="content"><img class="logo" src="/media/logo-transparent.webp" style="max-width: 50vw;"/><br/><h2 class="title">Stránky se připravují</h2></div><style>:root {
+}</style><div class="coming-soon" id="cs">           <div class="content"><img class="logo" src="/media/logo-transparent.webp" style="max-width: 50vw;"/><br/><h2 class="title">Stránky se připravují</h2></div><style>:root {
 --mouse-x: 0;
 --mouse-y: 0;
 }
 .time {
 display: flex;
+justify-content: center;
 flex-direction: row;
 transform: translateZ(20px);
 transform: translateZ(20px) rotateX(calc(var(--mouse-y) * 45deg)) rotateY(calc(var(--mouse-x) * 45deg));
@@ -862,18 +863,5 @@ seconds: time.getSeconds() };
 subscribe(({ hours, minutes, seconds }) => {
 timeElm.setAttribute('data-hours', pad(hours));
 timeElm.setAttribute('data-minutes', pad(minutes));
-timeElm.setAttribute('data-seconds', pad(seconds));
-});  
-/*
-const mouse$ = Rx.Observable.
-fromEvent(document, 'mousemove').
-map(({ clientX, clientY }) => ({
-x: (clientWidth / 2 - clientX) / clientWidth,
-y: (clientHeight / 2 - clientY) / clientHeight }));
-const smoothMouse$ = animationFrame$.
-withLatestFrom(mouse$, (_, m) => m).
-scan(RxCSS.lerp(0.1));
-RxCSS({
-mouse: smoothMouse$ },
-timeElm);                
-*/</script><div class="contact"><a class="email" href="mailto:info@evalytics.cz">info@evalytics.cz</a><br/><a class="phone" href="tel:+420777231628">+420 777 231 628</a></div></div></body></html>
+timeElm.setAttribute('data-seconds', pad(seconds));                
+});                </script><div class="contact"><a class="email" href="mailto:info@evalytics.cz">info@evalytics.cz</a><br/><a class="phone" href="tel:+420777231628">+420 777 231 628</a></div></div></body></html>
