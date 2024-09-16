@@ -1,9 +1,13 @@
 {
+	"dev": true,
 	"compilers": {
 		"ignore": [
 			"layout.pug",
 			"navbar.pug",
-			"reference.pug"
+			"reference.pug",
+			"contact-form.pug",
+			"contact.pug",
+			"footer.pug"
 		],
 		"javascript": {
 			"minified": true,
@@ -51,6 +55,14 @@
 				"User-agent: *",
 				"Allow: /"
 			]
-		}
+		},
+		"google": {
+			"gtm": {
+				"token": ""
+			},
+			"ga": {
+				"token": ""
+			}
+		}	
 	}
 }

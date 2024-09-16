@@ -1,0 +1,58 @@
+div#footer.footer-background
+	footer.row.row-cols-1.row-cols-sm-2.row-cols-md-4.py-4.my-4.border-top(style="margin-top: 0px !important; margin-bottom: 0px !important; border: none !important;")
+		.col.footer-section
+			a.d-flex.align-items-center.link-dark.text-decoration-none(href='/')
+				img.logo(src="/media/logo-light-crown.svg" alt="Logo Evalytics s.r.o." style="width:100%;")
+		.col.footer-section.mar-left-5pc
+			ul.nav.flex-column
+				each s in menu				
+					li.nav-item.mb-2
+						a.nav-link.p-0(href=s.url) !{s.label}
+		.col.footer-section
+			a.inherit-style(href="tel:+420 777 231 628")
+				p.white.small.ns 
+					b.white.small T:&nbsp
+					| +420 777 231 628
+			a.inherit-style(href="mailto:info@evalytics.cz")
+				p.white.small.ns
+					b.white.small E:&nbsp
+					| info@evalytics.cz
+			p.white.small.ns
+				b.white.small Č. účtu:
+				| 2700990040 / 2010
+			p.white.small.ns
+				b.white.small IBAN:
+				| CZ85 2010 0000 0027 0099 0040
+			p.white.small.ns
+				b.white.small BIC/SWIFT:
+				| FIOBCZPPXXX
+			.text-div
+			p.white.small Zapsáno do OR: Městský soud v Praze oddíl C vložka 257088
+			.text-div
+			p.white.small ID datové schránky:&nbsp
+				b.white.small jcbuc8q
+		.col.footer-section
+			p.white.small.ns
+				b.white.small Evalytics s.r.o.			
+			.text-div
+			p.white.small Křenická 55/31<br>100 00 Praha 10 - Strašnice
+			.text-div
+			p.white.small 
+				| IČ: 05018129
+				br
+				| DIČ: CZ05018129
+		.col.footer-section.appendix.left
+			p.x-small.light-gray © Evalytics s.r.o. 2016-2024
+		.col.footer-section.appendix.middle
+			ul.other
+				li
+					button.text(type="button" data-cc="show-preferencesModal") Nastavení cookies
+				li
+					a.text(href="/ochrana-osobnich-udaju") Ochrana osobních údajů						
+				li
+					a.text(href="/pouceni-pro-spotrebitele") Poučení pro spotřebitele
+		.col.footer-section.appendix.right
+			.social-media-panel()
+				i.bi.bi-facebook
+				i.bi.bi-linkedin
+				i.bi.bi-twitter

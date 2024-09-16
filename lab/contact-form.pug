@@ -1,0 +1,23 @@
+link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css" integrity="sha256-f6fW47QDm1m01HIep+UjpCpNwLVkBYKd+fhpb4VQ+gE=" crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js" integrity="sha256-321PxS+POvbvWcIVoRZeRmf32q7fTFQJ21bXwTNWREY=" crossorigin="anonymous")
+form.contact-form(action="javascript:void(0)")
+	.form-floating.mb-3.w-50
+		input.form-control.bottom-border(name = "krestni_jmeno" type='text' autocomplete="given-name" required)
+		label.required() Křestní jméno
+	.form-floating.mb-3.w-50
+		input.form-control.bottom-border(name = "prijmeni" type='text' autocomplete="family-name" required)
+		label.required() Příjmení
+	.form-floating.mb-3.w-50
+		input.form-control.bottom-border(name="email" type='email' required autocomplete="email")
+		label.required() Email
+	.form-floating.mb-3.w-50
+		input.form-control.bottom-border(name="telefon" type='phone' autocomplete="tel")
+		label() Telefon    
+	.form-floating.mb-3.w-100
+		textarea.form-control.bottom-border(name="message" rows="5" type='text' placeholder='' required)
+		label.required() Váše zpráva
+	.form-floating.mb-3.w-100
+		.form-check
+			input.form-check-input(name="gdpr" type='checkbox' value='' required)
+			label.required.form-check-label() Souhlas se zpracováním osobních údajů
+	button.btn.sl(type="submit" style="height: fit-content;") Odeslat 

@@ -5,6 +5,20 @@ $gray: rgb(94,94,94);
 $white: rgb(255,255,255);
 $section-full-horizontal-margin: 15%;
 
+body {
+    //width: 100%;    
+    //padding: 0px;
+    //margin: 0px;
+    background-image: url("/media/background/pexels-vedanti-66315-245250.webp");    
+}
+
+.tba {
+    .logo {
+        width: 100%;
+        padding: 25%;
+    }
+}
+
 p, b, i, li, a {
     font-family: "Cairo", sans-serif;
     font-optical-sizing: auto;    
@@ -50,10 +64,7 @@ section {
     justify-content: center;
 }
 
-
-
-#reference {
-    
+#reference {    
     .reference {
         display: flex;
         flex-wrap: wrap;
@@ -88,5 +99,50 @@ section {
     }
     .btn {
         color: $gray;        
+    }
+}
+
+footer {
+    padding: 10%;
+    --bs-gutter-x: 0px !important;    
+    .logo {        
+        width: 100%
+    }
+    .col {
+        padding: 20px 10px;
+    }
+    .nav-item, .nav-link {
+        text-wrap: nowrap;
+        font-weight: 700 !important;
+        letter-spacing: 3px !important;
+        text-transform: uppercase !important;
+        color: $white !important;
+        font-size: 0.9rem !important;
+    }
+    .mar-left-5pc {
+        padding-left: 5%;
+    }
+    .col.footer-section.full {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+    }
+    .other {
+        display: flex;
+        list-style: none;
+        .text {
+            font-size: 0.6rem;
+            font-weight: 300;
+            color: $white;            
+            margin: 0px;
+            padding: 0px;
+            background-color: transparent !important;
+            border: none !important;
+            text-decoration: none;
+        }
+        li:not(:first-child) {
+            margin-left: 1rem;
+        }
     }
 }

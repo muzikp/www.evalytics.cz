@@ -28,6 +28,26 @@ module.exports = {
             href: "#kontakt"
         }        
     ],
+    team: [
+        {
+            titul_pred: "PhDr. Ing.",
+            jmeno: "Pavel",
+            prijmeni: "Mužík",
+            titul_za: "Ph.D.",
+            specializace: ["výzkum trhu", "inovace", "integrace systémů"],
+            linkedin: "",
+            email: "pavel.muzik@evalytics.cz"
+        },
+        {
+            titul_pred: "JUDr.",
+            jmeno: "Jaroslava",
+            prijmeni: "Mužíková",            
+            specializace: ["korporátní strategie", "komunikace"],
+            linkedin: "",
+            email: "jaroslava.muzikova@evalytics.cz"
+        }
+        
+    ],
     reference: [
         {
             id: "louda-auto",
@@ -52,7 +72,13 @@ module.exports = {
             alt: "Univerzita Karlova",
             img: "uk.webp",
             url: "https://www.cuni.cz/"
-        },
+        },        
+        {
+            id: "vse",
+            alt: "Vysoká škola ekonomická",
+            img: "vse.svg",
+            url: "https://www.vse.cz/"
+        },        
         {
             id: "ministerstvo-zdravotnictvi",
             alt: "Ministerstvo zdravotnictví České republiky",
