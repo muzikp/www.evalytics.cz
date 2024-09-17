@@ -1,7 +1,9 @@
 {
 	"dev": true,
+	"splash": true,
 	"compilers": {
 		"ignore": [
+			"comming-soon-v1.pug",
 			"layout.pug",
 			"navbar.pug",
 			"reference.pug",
