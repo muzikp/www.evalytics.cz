@@ -1,5 +1,5 @@
 {
-	"dev": true,
+	"dev": false,
 	"splash": true,
 	"compilers": {
 		"ignore": [
